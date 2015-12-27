@@ -4,7 +4,9 @@ library(shiny)
 shinyUI(fluidPage(
 
         # Application title 
-        titlePanel("case-control study of (o)esophageal cancer in Ille-et-Vilaine, France"),
+        titlePanel("Dataset from case-control study of (o)esophageal cancer in Ille-et-Vilaine, France"),
+        
+        h4("Please choose Age group on the left and it will take a few seconds for the results on the right to refresh !!!"),
 
         # Sidebar with controls to select an age group
         sidebarLayout(
@@ -21,7 +23,7 @@ shinyUI(fluidPage(
                         
                         verbatimTextOutput("prop"),
                         
-                        h4("Here will return the heatmap with the association of Alochol and Tobacco consumptions"),
+                        h4("Here will return the heatmap of cases proportion in association with Alochol and Tobacco consumptions"),
                         
                         plotOutput("distPlot")
                         )
