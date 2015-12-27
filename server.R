@@ -1,7 +1,6 @@
 library(shiny) 
 library(datasets)
 library(ggplot2)
-library(magrittr)
 
 # Load in the "esoph" dataset
 esophData <- esoph

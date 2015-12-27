@@ -17,11 +17,11 @@ shinyUI(fluidPage(
                 # with the association of Alochol and Tobacco consumptions given the seleted age group
                 #
                 mainPanel(
-                        h4("Here will display the computed average proportion of cancer cases correspnding to selected age group"),
+                        h4("Here will return the computed average proportion of cancer cases correspnding to the age group selection"),
                         
                         verbatimTextOutput("prop"),
                         
-                        h4("Here will display the heatmap with the association of Alochol and Tobacco consumptions"),
+                        h4("Here will return the heatmap with the association of Alochol and Tobacco consumptions"),
                         
                         plotOutput("distPlot")
                         )
